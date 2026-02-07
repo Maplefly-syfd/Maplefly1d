@@ -1,0 +1,12 @@
+playEffect:se74/e74023_clock-01.wav -id=1;
+bgm:sentiveFreeMusic-main/sentiveFreeMusic-main/slos-v5_6/slos-v5_6/free0547.mp3;
+为什么？;
+为什么？为什么？;
+pixiPerform:rain;
+为什么为什么为什么为什么为什么为什么我们是为什么为什么为什么为什么为什么为什么为什么为什么为什么
+脑海中有声音怒吼着;
+changeBg:2026-02-05 180146.png;
+窒息感突然传来，你眼前一黑，倒下了 -notend;
+pixiInit;
+playEffect:none -id=1;
+choose:回到分支选项:|返回标题:en'd.txt;

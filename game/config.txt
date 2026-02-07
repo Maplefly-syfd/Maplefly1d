@@ -1,0 +1,11 @@
+Game_name:失叶枫蝶;
+Game_key:maplefly1d;
+Title_img:maplefly1d.jpg;
+Title_bgm:i72012_anohi_no_kage.mp3;
+Textbox_theme:imss;
+Description:;
+Enable_Appreciation:true;
+Game_Logo:;
+Show_panic:false;
+Default_Language:zh_CN;
+version:1.0;

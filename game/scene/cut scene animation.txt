@@ -1,0 +1,5 @@
+bgm:none;
+pixiInit;
+setVar:hg=hg+1 -global
+playEffect:失叶枫蝶.mp3;
+playVideo:lostleafmaplefly.mp4 -skipOff;

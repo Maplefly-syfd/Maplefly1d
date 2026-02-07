@@ -1,0 +1,44 @@
+intro:第三章|下午 -fontSize=large -backgroundColor=rgba(255, 247, 247, 1) -fontColor=rgba(0, 0, 0, 1) -animation=fadeIn -delayTime=1500;
+bgm:free0512.mp3;
+changeBg:K'sFactory-house.jpg;
+:一觉醒来，你神清气爽
+你决定
+choose:上厕所: |不上厕所:3-1 ;
+setVar:hg=hg+2 -global
+jumpLabel:3-2
+label:3-1
+什么？睡完觉起来居然不上厕所？！
+你没有理会玩家的选项
+label:3-2
+你释放了全部压力
+你看了看时间，居然是
+下午3点
+.......
+下午，你和朋友聊天以及玩游戏
+不知不觉到了晚上
+饿了还会吃东西！我的天
+你结束了下午的时光
+晚上，你要睡觉了，你决定
+choose:怕黑，把头缩进被子里: |怕什么，直接睡:3-3 ;
+setVar:hg=hg+2 -global
+jumpLabel:3-4
+label:3-3
+不不不不是!这不可以！
+你还是缩进被子了
+label:3-4
+你结束了失叶枫蝶的一天
+jumpLabel:the2 -when=multiple_playthroughs
+告诉我你的名字，可以在二周目使用
+getUserInput:in -title=二周目”我“将改成输入的文字 -buttonText=ok;
+setVar:player={in} -global
+setVar:multiple_playthroughs=true -global;
+label:the2
+每次过场动画都会加1好感度，关于好感度的选项有3个，答对获得2，每周目加起来到9时，触发”maple说“
+setTextbox:hide;
+changeBg:2026-02-05 180146.png;
+setTextbox:hide;
+bgm:none;
+:
+callScene:thank.txt;
+changeScene:maplesay.txt -when=hg>=9;
+end;

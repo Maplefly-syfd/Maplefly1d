@@ -1,0 +1,7 @@
+
+你站了起来...;
+顿时你感到非常头晕;
+我:怎么会！什么都看不到了.....;
+setTextbox:hide;
+intro:你晕死了过去，|你输了 -fontSize=large -backgroundColor=rgba(107, 4, 4, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+choose:回到分支选项|返回标题:en'd.txt;

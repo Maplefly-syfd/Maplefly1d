@@ -1,0 +1,22 @@
+jumpLabel:the2time -when=multiple_playthroughs
+setVar:Title_img=maplefly1d.jpg -global
+setVar:Title_bgm=i72012_anohi_no_kage.mp3 -global
+unlockCg:maplefly1d.jpg -name=标题;
+setVar:player=我 -global
+setVar:hg=0 -global
+label:the2time 
+setTextbox:on;
+intro:你是一个玩家，而我是失叶枫蝶|因为你不是失叶枫蝶|所以，下面你将扮演失叶枫蝶|度过失叶枫蝶的一天| -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+bgm:free0501.mp3;
+intro:小心！|任何失误都可能导致你存活失败！|寻找线索，努力活下去| -fontSize=medium -backgroundColor=rgba(74, 54, 54, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+bgm:free0522.mp3;
+changeBg:1760333-20190822141106155-1550749821.jpg;
+setTextbox:on;
+失叶枫蝶:选择你的出生点吧。;
+choose:随机到一个地方:start分子/1.txt|去中国:选择场景文件;
+你的出生点是中国！;
+为什么是中国？|废话，因为我只去过这;
+开始吧！皮卡丘！;
+:现在你是失叶枫蝶——;
+callScene:cut scene animation.txt;
+changeScene:1.txt;

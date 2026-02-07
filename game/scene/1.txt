@@ -1,0 +1,57 @@
+intro:第一章|起床 -fontSize=large -backgroundColor=rgba(255, 247, 247, 1) -fontColor=rgba(0, 0, 0, 1) -animation=fadeIn -delayTime=1500;
+bgm:free0512.mp3;
+changeBg:K'sFactory-house.jpg;
+playEffect:e71002_asa_tori.wav;
+{player}:（缓缓从床上醒来.....）;
+playEffect:none;
+头晕晕的，我要做什么呢？;
+桌上好像有！纸条？;
+这是谁留给我的呢？;
+label:1-1
+choose:起床看桌上的纸条:|不看他:label_1;
+callScene:1-/1-1.txt;
+setTextbox:on;
+jumpLabel:1-1
+label:label_1
+还是不看了吧，接着睡觉
+（你从8点睡到了9点半）
+bgm:free0512.mp3;
+你应该做什么？
+choose:吃点床旁边的零食:go-1|起床看桌上的纸条:;
+callScene:1-/1-1.txt;
+setTextbox:on;
+jumpLabel:1-1
+label:go-1
+吃完零食你感觉状态好了很多
+{player}:现在是夏天，看来不用麻烦穿厚厚的衣服了
+:你去看了看桌子上的纸条
+unlockCg:2026-02-06 204726.png ;
+changeBg:2026-02-06 204726.png -unlockname=纸条;
+:.........;
+changeBg:K'sFactory-house.jpg;
+{player}:这是什么东西啊;
+离谱，还以为是什么有用的东西;
+先收下吧。
+现在接着去寻找线索吧...
+intro:不一会，你简简单单把房间搜了一遍|获得了一些基本信息| -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+手机日历的日期是3月的周末，壁纸是最经典的壁纸。
+:你突然觉得有些胸闷，头也有点晕晕的
+{player}:房间没有什么垃圾，但是灰尘却很重。
+为什么会出现这种情况？;
+:你去冰箱搞了点牛奶和饼干吃，算是解决了一顿早饭。
+你刷视频刷到了很多线条小狗
+label:1-2;
+:那么现在应该做什么呢？;
+changeBg:K'sFactory-house.jpg;
+bgm:free0512.mp3;
+choose:出门:|玩5v5不公平竞技游戏:label_2;
+callScene:1-/1-2.txt;
+jumpLabel:1-2;
+label:label_2;
+:你打开了那个游戏
+{player}:玩法师吧！中路有种掌控全局的感觉
+:你看了看自己的号，小乔的线条小狗尤其可爱
+{player}:就玩她吧
+:..........
+callScene:cut scene animation.txt;
+changeScene:2.txt;
